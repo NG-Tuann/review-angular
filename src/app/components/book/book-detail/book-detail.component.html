@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>{{ book.id }}</h1>
+      <h2>{{book.name}}</h2>
+      <h3>${{book.price}}</h3>
+      <p>{{book.des}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div
+        class="btn-group"x
+        role="group"
+        aria-
+        label="Button group with nested dropdown"
+      >
+        <div class="btn-group" role="group" appDropdown>
+          <button
+            id="btnGroupDrop1"
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-
+            haspopup="true"
+            aria-expanded="false"
+          >
+            Manage
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" style="cursor: pointer;" (click)="onEditBook()" >Edit Book</a>
+            <a class="dropdown-item" style="cursor: pointer;" (click)="onDeleteBook()">Delete Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
